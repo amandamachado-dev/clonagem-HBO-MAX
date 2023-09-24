@@ -1,0 +1,465 @@
+@import url("./global.css");
+
+/* Custom Scroll */
+
+::-webkit-scrollbar {
+   width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--tertiary-color);
+   border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: var(--secondary-color);
+}
+
+
+/* Nav - menu */
+.menu {
+   background-color: var(--primary-color);
+   width: 100%;
+   height: 4rem;
+   position: fixed;
+   padding: 16px 16px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: var(--nav-bg-color);
+   z-index: 1;
+
+}
+
+.menu_login {
+   display: flex;
+   align-items: center;
+}
+
+.menu_logo {
+   width: 200px;
+}
+
+.menu_item {
+   margin-right: 24px;
+   font-weight: 700;
+   font-size: 0.75rem;
+   color: var(--text-color);
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.menu_item-button {
+   margin: auto;
+   padding: 8px 30px;
+   background-color: var(--tertiary-color);
+   color: var(--text-color);
+   border-radius: 500px;
+   letter-spacing: 4px;
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.menu_item-button {
+   transition: background 1s, color 1s;
+}
+
+.menu_item-button:hover {
+   background: var(--btn-link-bg-color);
+   color: var(--btn-link-color);
+}
+
+/* Header*/
+
+.head {
+
+   width: 100%;
+   height: 100vh;
+   margin-top: 60px;
+   padding: 100px 0 300px;
+   position: absolute;
+   background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+   ;
+   animation: background 10s infinite alternate;
+   background-repeat: no-repeat;
+   background-size: 400% 400%;
+}
+
+@keyframes background {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   50% {
+      background-position: 100% 50%;
+   }
+
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+.head_content {
+   width: 80%;
+   height: 100%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   padding: 0 60px;
+}
+
+.head_content-logo {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 24px;
+}
+
+.head_logo {
+   object-fit: contain;
+}
+
+.head_tittle {
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 3rem;
+}
+
+.head_tittle-span {
+   display: block;
+   font-weight: lighter;
+   font-size: 2rem;
+}
+
+.divider {
+   width: 80%;
+   max-width: 700px;
+   height: 5px;
+   background: var(--divider-bg-color);
+}
+
+.head__content-paragraph-1 {
+   text-align: center;
+   font-size: 1.25rem;
+}
+
+.head__content-paragraph-1 span {
+   font-family: "Raleway", sans-serif;
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.head__button {
+   background: var(--btn-bg-color-gradient);
+   outline: 3px solid transparent;
+   transition: background 1s, outline 1s, transform 1s;
+   background-size: 250%;
+}
+
+
+.button1 {
+   animation: wiggle 2.2s linear infinite;
+}
+
+@keyframes wiggle {
+
+   0%,
+   10% {
+      transform: rotate(0);
+   }
+
+   15% {
+      transform: rotate(-15deg);
+   }
+
+   20% {
+      transform: rotate(10deg);
+   }
+
+   25% {
+      transform: rotate(-10deg);
+   }
+
+   30% {
+      transform: rotate(10deg);
+   }
+
+   35% {
+      transform: rotate(-10deg);
+   }
+
+   40%,
+   100% {
+      transform: rotate(0);
+   }
+}
+
+.button {
+   padding: 16px 40px;
+   background-color: var(--tertiary-color);
+   border-radius: 500px;
+   font-weight: 700;
+   color: var(--text-color);
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 4px;
+   border: none;
+   cursor: pointer;
+}
+
+.head__content-paragraph-2 {
+   font-family: "Quicksand", sans-serif;
+   max-width: 300px;
+   text-align: center;
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+header::after {
+   content: "";
+   width: 100%;
+   height: 250px;
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+/* Main */
+
+main {
+   display: flex;
+   flex-direction: column;
+}
+
+/* Section 1 */
+
+.section__content {
+
+   background: url(../images/background-movies-series.png) no-repeat;
+   background-size: contain;
+   position: absolute;
+   margin-top: 100vh;
+   width: 100%;
+   
+
+
+}
+
+.s__content {
+   
+   display: flex;
+   padding: 24px;
+   margin: auto;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+
+.s__content-price {
+   display: flex;
+   flex-direction: row;
+   gap: 100px;
+   padding: 0px 60px;
+   margin: auto;
+   border-radius: 8px;
+   display: flex;
+   height: 48rem;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   perspective: 2000px;
+  perspective-origin: top;
+   
+   
+}
+
+.s__content-price:has(.s__content-plan1:hover)
+.s__content-plan2 {
+  transform: rotateY(-45deg);
+}
+
+.s__content-price:has(.s__content-plan2:hover)
+.s__content-plan1 {
+  transform: rotateY(45deg);
+}
+
+
+.section__content-title {
+   width: 70%;
+   font-size: 2rem;
+   font-weight: 500;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.s__content-plan1, .s__content-plan2 {
+   width: 33.5rem;
+   height: 80%;
+   border-radius: 2%;
+   gap: 30px;
+   background: var(--card-bg-color);
+   padding: 40px 60px;
+   justify-content: space-between;
+   transition: transform 1s ease-in-out;
+   
+
+}
+.s__content-p::before {
+   content: "+      "
+   
+   
+}
+.s__content-p {
+   text-align: left;   
+   font-size: 1.3rem;
+   margin-top: 10px;
+   margin-bottom: 1.5rem;
+   padding-left: 14px;
+}
+
+.s__content-tittle {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 3rem;
+
+}
+
+h4 {
+   width: 112px;
+   height: 37px;  
+   font-size: 1.8rem;    
+   font-weight: bold;
+}
+
+span {
+   font-size: 2rem;    
+   font-weight: bold;
+   color: #FF00E5;
+}
+
+button {
+   margin: 28px 0 0 0;
+   padding: 16px 40px;
+   background-color: var(--tertiary-color);
+   border-radius: 500px;
+   font-weight: 700;
+   color: var(--text-color);
+   text-transform: uppercase;
+   text-decoration: none;
+   letter-spacing: 4px;
+   border: none;
+   cursor: pointer;
+
+ }
+ 
+ button.s__content-button {
+   background: var(--btn-bg-color-gradient);
+   outline: 3px solid transparent;
+   transition: background 1s, outline 1s, transform 1s;
+   background-size: 250%;
+   
+ }
+ 
+ button.s__content-button:hover {
+   background-color: transparent;
+   background-position: 100%;
+   outline: 2px solid var(--secondary-color);
+   transform: scale(1.05);
+ }
+ #s__content-button1 {
+   margin-top: 100px;
+   width: 26rem;
+   
+   
+ }
+ #s__content-button2 {
+   width: 26rem;
+ }
+
+ /* contents-section 2*/
+ .contents {
+   margin: 1900px auto 6rem auto; 
+ }
+ 
+ .title { 
+   font-size: 2rem;
+   font-weight: 500;
+ }
+
+ .contents__container {
+   margin-top: 40px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+ }
+
+ .contents__card {
+   border-radius: 16px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   border: 2px solid transparent;
+   transition: transform 0.8s, background 0.8s, border 1s;
+ }
+
+ .contents__card:hover {
+   transform: scale(1.05);
+   border: 2px solid var(--tertiary-color);
+ }
+ 
+ .contents__card:hover .contents__image {
+   opacity: 0;
+ }
+ 
+ .contents__image {
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: opacity 2s;
+ }
+ 
+ /* HBO Content */
+ 
+ .contents__card:nth-child(1):hover {
+   background-image: url("../images/hbo-hover_0.webp");
+ }
+ 
+ /* Max Originals Content */
+ 
+ .contents__card:nth-child(2):hover {
+   background-image: url("../images/MAX-Hover.webp");
+ }
+ 
+ /* DC Content */
+ 
+ .contents__card:nth-child(3):hover {
+   background-image: url("../images/DC-Hover.webp");
+ }
+ 
+ /* WB Content */
+ 
+ .contents__card:nth-child(4):hover {
+   background-image: url("../images/WB-Hover.webp");
+ }
+ 
+ /* CN Content */
+ 
+ .contents__card:nth-child(5):hover {
+   background-image: url("../images/CN-Hover.png");
+ }
+ 
+ /* Champions League Content */
+ 
+ .contents__card:nth-child(6):hover {
+   background-image: url("../images/UCL-Hover.webp");
+ }
+
+ /* page logIn*/
+ 
