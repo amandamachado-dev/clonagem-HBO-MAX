@@ -304,7 +304,7 @@ main {
 
 .section__content-title {
    
-   font-size: 2rem;
+   font-size: 1.7rem;
    font-weight: 500;
    
    
@@ -541,10 +541,16 @@ button {
    .s__content-price {
      flex-direction: column;
      justify-content: center;
+     max-width: 420px;
+     padding: 0 5px;
    }
  
    .s__content-card {
      padding: 40px;
+     max-width: 370px;
+   }
+   .s__content-button {
+    max-width: 290px;
    }
  
    .contents__container {
